@@ -1,0 +1,36 @@
+﻿
+
+@{
+    ViewBag.Title = "Contact";
+}
+@model Basistrainint.RM.WebApplication.Models.PersonViewModel
+<h2>Contact</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="tabletable-bordered table-striped table-hover">
+    <tr>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.people)
+    {
+        <tr>
+            <td>
+                @Html.Raw(item.PersonID)
+            </td>
+            <td>
+                @Html.Raw(item.fullname)
+            </td>
+            <td>
+                @Html.Raw(item.firstname)
+            </td>
+            <td>
+                @Html.Raw(item.lastname)
+            </td>
+
+        </tr>
+    }
+
+</table>

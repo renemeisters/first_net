@@ -1,0 +1,15 @@
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\Basistraining.RM.Comm.dll.config
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\Basistraining.RM.Comm.dll
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\Basistraining.RM.Comm.pdb
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\Basistrainig.RM.DataAccess.dll
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\EntityFramework.dll
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\Basistrainig.RM.DataAccess.pdb
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\Basistrainig.RM.DataAccess.dll.config
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\EntityFramework.xml
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\obj\Debug\Basistraining.RM.Comm.csprojAssemblyReference.cache
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\obj\Debug\Basistraining.RM.Comm.csproj.CoreCompileInputs.cache
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\obj\Debug\Basistraining.RM.Comm.csproj.CopyComplete
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\obj\Debug\Basistraining.RM.Comm.dll
+C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistraining.RM.Comm\obj\Debug\Basistraining.RM.Comm.pdb

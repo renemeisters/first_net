@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Basistraining.RM.Comm.Person>
+
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>About</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>PersonID</th>
+        <th>Fullname</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+    </tr>
+
+@foreach (var item in Basistraining.RM.Comm.Person.GetPerson()) {
+    <tr>
+        <td>
+            @Html.Raw(item.PersonID)
+        </td>
+        <td>
+            @Html.Raw(item.fullname)
+        </td>
+        <td>
+            @Html.Raw(item.firstname)
+        </td>
+        <td>
+            @Html.Raw(item.lastname)
+        </td>
+
+    </tr>
+}
+
+</table>
