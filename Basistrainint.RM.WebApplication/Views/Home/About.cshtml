@@ -7,7 +7,7 @@
 <h2>About</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "/create")
 </p>
 <table class="table table-bordered table-striped table-hover">
     <tr>
@@ -15,6 +15,9 @@
         <th>Fullname</th>
         <th>Firstname</th>
         <th>Lastname</th>
+        <th>Update</th>
+        <th>Delete</th>
+     
     </tr>
 
 @foreach (var item in Basistraining.RM.Comm.Person.GetPerson()) {
@@ -30,6 +33,13 @@
         </td>
         <td>
             @Html.Raw(item.lastname)
+        </td>
+        <td>
+            @Html.ActionLink("update", "update", Html.Raw(item.PersonID));
+
+        </td>
+        <td>
+            @Html.ActionLink("delete", "delete", item.PersonID);
         </td>
 
     </tr>

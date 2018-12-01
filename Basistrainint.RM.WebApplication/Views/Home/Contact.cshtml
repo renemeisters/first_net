@@ -11,7 +11,12 @@
 </p>
 <table class="tabletable-bordered table-striped table-hover">
     <tr>
-        <th></th>
+        <th>UserID</th>
+        <th>Fullname</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Edit</th>
+
     </tr>
 
     @foreach (var item in Model.people)
@@ -29,7 +34,13 @@
             <td>
                 @Html.Raw(item.lastname)
             </td>
+            <td>
+                @Html.ActionLink("update", "home", "update", Html.Raw(item.PersonID));
 
+            </td>
+            <td>
+                @Html.ActionLink("delete","home","update",Html.Raw(item.PersonID));
+            </td>
         </tr>
     }
 

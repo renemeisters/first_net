@@ -69,31 +69,34 @@ namespace Basistraining.RM.Comm
             
         }
 
-        public static Int64 Erstellen(string first, string last)
+    
+
+        public Person Save()
         {
-            Basistrainig.RM.DataAccess.Person pers = new Basistrainig.RM.DataAccess.Person();
-            pers.FirstName = first;
-            pers.LastName = last;
-            //if (reservation.Spielername == null || reservation.Spielername == "") reservation.Spielername = "leer";
 
             using (var context = new SchoolEntities())
             {
-                context.Person.Add(pers);
+                context.Person.Add(MapPersonToData(this));
                 //TODO Check ob mit null möglich, sonst throw Ex
-               
+                context.Entry(this).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
-                return pers.PersonID;
+                return this;
             }
         }
-        public static void Aktualisieren(Basistrainig.RM.DataAccess.Person p)
+
+        private static Basistrainig.RM.DataAccess.Person MapPersonToData(Basistraining.RM.Comm.Person p)
         {
-            using (var context = new SchoolEntities())
+            return new Basistrainig.RM.DataAccess.Person()
             {
-                //TODO null Checks?
-                context.Entry(p).State = System.Data.Entity.EntityState.Modified;
-                context.SaveChanges();
-            }
+                PersonID = p.PersonID,
+                FirstName = p.firstname,
+                LastName = p.lastname
+            };
+
         }
+
+
+
         public static void Loeschen(Basistrainig.RM.DataAccess.Person p)
         {
             using (var context = new SchoolEntities())

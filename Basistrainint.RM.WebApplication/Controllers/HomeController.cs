@@ -27,5 +27,37 @@ namespace Basistrainint.RM.WebApplication.Controllers
             Models.PersonViewModel p = new Models.PersonViewModel();
             return View(p);
         }
+        
+        public ActionResult AddPerson(FormCollection collection)
+        {
+            try
+            {
+                //Basistraining.RM.Comm.Person.Erstellen(collection["firstname"], collection["lastname"]);
+                return Redirect("index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        public ActionResult Create(FormCollection collection)
+        {
+      
+            try
+            {
+                new Basistraining.RM.Comm.Person
+                {
+                    firstname = collection["fistname"],
+                    lastname = collection["lastname"]
+                }.Save();
+             //   Basistraining.RM.Comm.Person.Erstellen(collection["firstname"],collection["lastname"]);
+                return Redirect("index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }

@@ -10,3 +10,15 @@ C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistrainig.RM.DataAccess\obj\Deb
 C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistrainig.RM.DataAccess\obj\Debug\Basistrainig.RM.DataAccess.csproj.CopyComplete
 C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistrainig.RM.DataAccess\obj\Debug\Basistrainig.RM.DataAccess.dll
 C:\Users\vmadmin\source\repos\Basistrainig.RM\Basistrainig.RM.DataAccess\obj\Debug\Basistrainig.RM.DataAccess.pdb
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\bin\Debug\Basistrainig.RM.DataAccess.dll.config
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\bin\Debug\Basistrainig.RM.DataAccess.dll
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\bin\Debug\Basistrainig.RM.DataAccess.pdb
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\obj\Debug\Basistrainig.RM.DataAccess.csprojAssemblyReference.cache
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\obj\Debug\Basistrainig.RM.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\obj\Debug\Basistrainig.RM.DataAccess.csproj.CopyComplete
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\obj\Debug\Basistrainig.RM.DataAccess.dll
+C:\Users\vmadmin\Documents\Visual Studio 2017\Projects\Basistraining\first_net\Basistrainig.RM.DataAccess\obj\Debug\Basistrainig.RM.DataAccess.pdb

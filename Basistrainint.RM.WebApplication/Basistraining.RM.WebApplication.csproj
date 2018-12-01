@@ -199,6 +199,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\AddPerson.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -217,6 +219,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Basistrainig.RM.DataAccess\Basistrainig.RM.DataAccess.csproj">
+      <Project>{6CB95029-1D9D-492F-868F-B40B3645F20F}</Project>
+      <Name>Basistrainig.RM.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Basistraining.RM.Comm\Basistraining.RM.Comm.csproj">
       <Project>{087627fb-3d05-45a2-a0ff-3ee2eccda189}</Project>
       <Name>Basistraining.RM.Comm</Name>
