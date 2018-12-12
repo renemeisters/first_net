@@ -12,7 +12,7 @@
 <table class="table table-bordered table-striped table-hover">
     <tr>
         <th>PersonID</th>
-        <th>Fullname</th>
+      
         <th>Firstname</th>
         <th>Lastname</th>
         <th>Update</th>
@@ -25,9 +25,7 @@
         <td>
             @Html.Raw(item.PersonID)
         </td>
-        <td>
-            @Html.Raw(item.fullname)
-        </td>
+   
         <td>
             @Html.Raw(item.firstname)
         </td>
@@ -35,11 +33,11 @@
             @Html.Raw(item.lastname)
         </td>
         <td>
-            @Html.ActionLink("update", "update", Html.Raw(item.PersonID));
+            @Html.ActionLink("update", "update", new { id = item.PersonID });
 
         </td>
         <td>
-            @Html.ActionLink("delete", "delete", item.PersonID);
+            @Html.ActionLink("delete", "delete", new { id = item.PersonID });
         </td>
 
     </tr>

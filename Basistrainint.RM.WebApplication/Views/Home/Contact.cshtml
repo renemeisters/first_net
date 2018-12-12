@@ -9,10 +9,10 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="tabletable-bordered table-striped table-hover">
+<table class="highlight">
     <tr>
         <th>UserID</th>
-        <th>Fullname</th>
+
         <th>Firstname</th>
         <th>Lastname</th>
         <th>Edit</th>
@@ -25,9 +25,7 @@
             <td>
                 @Html.Raw(item.PersonID)
             </td>
-            <td>
-                @Html.Raw(item.fullname)
-            </td>
+        
             <td>
                 @Html.Raw(item.firstname)
             </td>
@@ -39,7 +37,7 @@
 
             </td>
             <td>
-                @Html.ActionLink("delete","home","update",Html.Raw(item.PersonID));
+                @Html.ActionLink("delete","home","delete","PersonID", Html.Raw(item.PersonID));
             </td>
         </tr>
     }

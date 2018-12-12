@@ -21,7 +21,8 @@ namespace Basistraining.RM.CheckAccess
 
                 var p = context.Person.ToList();
                 Assert.IsNotNull(p.Count);
-
+         
+         
             }
         }
 
@@ -53,13 +54,21 @@ namespace Basistraining.RM.CheckAccess
         {
             using(var context = new SchoolEntities())
             {
-                var first = "Marcel";
-                var last = "Schmutz";
-                Comm.Person.Erstellen(first, last);
-                var p = context.Person.ToList();
-                int numb = 38;
-                Assert.Equals(numb, p.Count);
+                var pers = new Comm.Person();
+                pers.firstname = "Marcel";
+                pers.lastname = "Schmutz2";
+                var people = context.Person.ToList();
+                int count = people.Count();
+                pers.Save();
+                var peopleAfter = context.Person.ToList();
+                int countAfter = peopleAfter.Count();
+                Assert.AreNotEqual(count, countAfter);
             }
+        }
+
+        public void CheckDelet()
+        {
+
         }
     }
 }

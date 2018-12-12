@@ -48,16 +48,45 @@ namespace Basistrainint.RM.WebApplication.Controllers
             {
                 new Basistraining.RM.Comm.Person
                 {
-                    firstname = collection["fistname"],
+                    firstname = collection["firstname"],
                     lastname = collection["lastname"]
                 }.Save();
              //   Basistraining.RM.Comm.Person.Erstellen(collection["firstname"],collection["lastname"]);
-                return Redirect("index");
+                return RedirectToAction("index");
             }
             catch
             {
                 return View();
             }
+        }
+
+        public ActionResult Update(int id,FormCollection collection)
+        {
+            ViewBag.Message = "Your application description page.";
+            try
+            {
+                var pers = Basistraining.RM.Comm.Person.GetPersonById(id);
+                pers.firstname = collection["firstname"];
+                pers.lastname = collection["lastname"];
+                pers.Save();
+                return RedirectToAction("index");
+            }
+            catch
+            {
+                return View();
+            }
+        
+     
+            
+        }
+
+        public ActionResult  Delete(int id)
+            
+        {
+                var pers = Basistraining.RM.Comm.Person.GetPersonById(id);
+                pers.Loeschen();
+                return RedirectToAction("index");
+         
         }
     }
 }

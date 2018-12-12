@@ -28,6 +28,8 @@ namespace Basistrainig.RM.DataAccess
         public virtual DbSet<Course> Course { get; set; }
         public virtual DbSet<Person> Person { get; set; }
 
-      //  public System.Data.Entity.DbSet<Basistraining.RM.Comm.Person> People { get; set; }
+       //S public System.Data.Entity.DbSet<Basistraining.RM.Comm.Person> People { get; set; }
+
+        //  public System.Data.Entity.DbSet<Basistraining.RM.Comm.Person> People { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Basistrainig.RM.DataAccess;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,6 @@ namespace Basistraining.RM.Comm
     public class Person
     {
         public int PersonID { get; set; }
-        public string fullname { get; set; }
 
         public string firstname { get; set; }
         public string lastname { get; set; }
@@ -62,7 +62,7 @@ namespace Basistraining.RM.Comm
             return new Person()
             {
                 PersonID = p.PersonID,
-                fullname = $"{p.FirstName} {p.LastName}",
+      
                 firstname = p.FirstName,
                 lastname = p.LastName
             };
@@ -76,11 +76,11 @@ namespace Basistraining.RM.Comm
 
             using (var context = new SchoolEntities())
             {
-                context.Person.Add(MapPersonToData(this));
-                //TODO Check ob mit null möglich, sonst throw Ex
-                context.Entry(this).State = System.Data.Entity.EntityState.Modified;
+                Basistrainig.RM.DataAccess.Person pers = MapPersonToData(this);
+                context.Person.AddOrUpdate(pers);
+ 
                 context.SaveChanges();
-                return this;
+                return MapDataToPerson(pers); 
             }
         }
 
@@ -97,11 +97,12 @@ namespace Basistraining.RM.Comm
 
 
 
-        public static void Loeschen(Basistrainig.RM.DataAccess.Person p)
+        public void Loeschen()
         {
+            Basistrainig.RM.DataAccess.Person p = MapPersonToData(this);
             using (var context = new SchoolEntities())
             {
-                context.Person.Attach(p);
+               context.Person.Attach(p);
                 context.Person.Remove(p);
                 context.SaveChanges();
             }
